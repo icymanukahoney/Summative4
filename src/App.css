@@ -1,0 +1,1192 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+/* 
+font-family: 'Nunito', sans-serif; 
+font-family: 'Crimson Text', serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  /*font-family: 'Crimson Text', serif, 'Nunito', sans-serif;*/
+}
+
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+body.no-scroll {
+  overflow-y: hidden;
+}
+
+label {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  color: #000000;
+  margin-bottom: 40px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: 'Crimson Text', serif;
+}
+h4 {
+  margin-bottom: 40px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: 'Crimson Text', serif;
+}
+
+.back-button {
+  padding: 10px 10px;
+  color: #000000;
+  background-color: rgba(252, 185, 0, 0);
+  font-size: 20px;
+  font-family: 'Crimson Text', serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: #000000 1px solid;
+}
+/* nav */
+#topnav {
+  width: 100%;
+  background: #ffffff;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+#topnav a {
+  color: #000000;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+  margin-top: 5px;
+  display: inline-block;
+  font-family: 'Crimson Text', serif;
+}
+
+#topnav #logo {
+  
+    font-weight: 600;
+    font-size: 28px;
+    margin-right: 30px;
+    text-align: center;
+}
+#topnav #logo img {
+  width: 70%;
+  margin-bottom: 0;
+}
+
+#menu {
+  width: 75%;
+  padding-right: 30px;
+  text-align: center;
+}
+
+#menu-button {
+  float: right;
+}
+
+#button-container {
+  width: 50%;
+}
+
+/* buttons */
+button {
+  background: none;
+  border: none;
+  display: block;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#hamburger-icon {
+  color: #000000;
+  font-size: 33px;
+  position: relative;
+  top: 2px;
+  padding-right: 40px;
+}
+
+#mobile-menu {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 25%;
+}
+#mobile-menu a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 700;
+  font-family: 'Crimson Text', serif;
+
+}
+
+#close-nav-menu {
+  z-index: 2;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  font-size: 53px;
+  color:#1f1f1f;
+}
+
+#menu {
+  display: none;
+}
+
+#menu-container {
+  width: 100%;
+}
+
+#topnav a:hover {
+  color: #cf2e2e;
+  transition: all 0.3s ease;
+}
+
+#menu a:hover {
+  color: #cf2e2e;
+  transition: all 0.3s ease;
+}
+
+.hourglass-container
+{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  }
+
+.loader-container {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  }
+/* footer */
+.footer {
+  background-color: #020381;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; 
+}
+#footer-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px; 
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+#footer-menu li {
+  padding: 10px; 
+  margin-top: 10px
+}
+
+#footer-menu a {
+  text-decoration: none;
+  color: #ffffff; 
+  font-family: 'Crimson Text', serif;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer h4 {
+  margin: 10px;
+}
+
+.footer-bottom {
+  margin-top: auto;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+/* --------- HOME ----------- */
+
+.container {
+  padding: 60px;
+}
+
+/*  hero */
+.hero-section {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home-sections {
+  border-bottom: 1px solid  rgba(207, 46, 46, 1);
+}
+
+.slogan-container {
+  position: static; 
+  text-align: center;
+  background-color: rgba(46, 162, 204, 1);
+  width: 100%;
+  height: 350px;
+  padding-top: 40px;
+}
+
+.slogan-container h3 {
+  font-size: 40px;
+  color: #ffffff;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Crimson Text', serif;
+}
+
+.get-colours {
+  padding: 20px 20px;
+  font-size: 30px;
+  background-color: #020381;
+  color: white;
+  display: block;
+  margin: 0px auto;
+  display: inline-block;
+  margin-left:  20px;
+  margin-right:  20px;
+  margin-bottom:  20px;
+}
+
+.get-colours:hover {
+  background-color: #0707ff;
+}
+
+.home-sections {
+  display: grid;
+  grid-template-columns: 1fr ;
+  column-gap: 40px;
+  margin-top: 40px;
+  /* margin-bottom: 40px; */
+  padding-bottom: 40px;
+}
+.home-sections img {
+  width: 100%;
+}
+
+.home-sections h4 {
+  font-size: 23px;
+  font-family: 'Crimson Text', serif;
+  /*color: rgba(38, 106, 109, 1);*/
+  padding-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+  /*color: #266a6d;*/
+} 
+
+.home-sections p {
+  font-size:  20px;
+  /*font-family: 'Nunito', sans-serif; */
+  color: #000000; 
+}
+
+.home-sections .who-consultant {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally in each div */
+}
+
+.find-consultant{
+  padding: 10px 10px;
+  color: #ffffff;
+  background-color: #fcb900;
+  font-size: 20px;
+  font-family: 'Crimson Text', serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.find-consultant:hover {
+  background-color: #e89c00;
+}
+
+.home-sections .about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.contact-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.contact-btn{
+  padding: 10px 10px;
+  color: #ffffff;
+  background-color: #fcb900;
+  font-size: 20px;
+  font-family: 'Crimson Text', serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contact-btn:hover {
+  background-color: #e89c00;
+}
+#homePostCont {
+border-bottom: 1px solid #cf2e2e; 
+}
+
+.card-container {
+text-align: center;
+padding-bottom: 30px;
+}
+.cardCont {
+margin-top: 30px;
+padding-bottom: 30px;
+}
+
+.post-card img {
+  width: 100%;
+  border: 1px solid #cfcfcf;
+}
+.discover-btn {
+  text-align: center;
+  }
+  .post-card a{
+  color: #ffffff;
+  background-color: #fcb900;
+  display: inline-block;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Crimson Text', serif;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.post-card {
+  padding-bottom:  20px;
+}
+
+.post-card a:hover {
+  background-color: #e89c00;
+}
+  .post-card li{
+  list-style: none;
+  }
+  h4.title {
+  font-size: 20px;
+  font-family: 'Crimson Text', serif;
+  /*color: #266a6d;*/
+  padding-bottom: 10px;
+  padding-top: 20px;
+  }
+  .discover-service {
+  color: #cf2e2e;
+  display: inline-block;
+  padding: 20px 18px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Crimson Text', serif;
+  }
+
+  .home-sections h5 {
+  padding-top:  20px;
+   /*font-family: 'Nunito', sans-serif; */
+  font-size: 20px;
+  color: #000000;
+  }
+
+  /*  ----- Subscription ----- */
+  form {
+    background-color: #2ea2cc;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+  .form-group {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .form-group h3 {
+    font-size: 23px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    margin: 30px;
+    padding-top: 30px;
+    font-family: 'Crimson Text', serif;
+
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+  
+  .form-group input {
+    width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  .subscribe {
+    background-color: #fcb900;
+    color: #ffffff;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Crimson Text', serif;
+  }
+  
+  .subscribe:hover {
+    background-color: #e89c00;
+  }
+  
+  form p {
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .message-cont {
+    width: 250px;
+    height: 150px;
+  }
+  /*CONTACT PAGE*/
+
+  .contactMessage{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .contactMessage h3,p {
+    font-size: 25px;
+  }
+
+  /* cons page */
+  .cons-shop-container {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top:  20px;
+  }
+
+  .homeCont {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    }
+    .post-shop-container img {
+      width: 100%;
+      border: 1px solid #cfcfcf;
+    }
+
+    .post-shop-container  {
+      padding-bottom: 50px;
+      padding-top: 20px
+    }
+  
+    .cons-shop-container {
+      text-align: center;
+      padding-bottom: 30px;
+      padding-top: 20px;
+  }
+
+  .post-shop-container a {
+    color: #cf2e2e;
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Crimson Text', serif;
+    list-style: none;
+}
+.post-shop-container li {
+  list-style: none;
+}
+
+/* Single - consultant Page */
+.single-container {
+  grid-template-columns: 1fr; 
+  display: grid;
+  column-gap: 40px;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.img-single-post img {
+  width: 100%;
+  padding-top:  20px;
+  padding-bottom:  30px;
+}
+
+.single-container h4 {
+  font-size: 23px;
+  font-family: 'Crimson Text', serif;
+   /*color: rgba(38, 106, 109, 1);*/
+  padding-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+} 
+
+.single-container p {
+  font-size:  20px;
+   /*font-family: 'Nunito', sans-serif; */
+   color: #000000;
+}
+
+.single-container .single-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.info-content {
+text-align: left;
+padding-bottom: 30px;
+padding-top: 30px;
+margin-top: 30px;
+padding: 30px;
+}
+.taxonomy-term-pill {
+  font-size: 25px;
+  font-family: 'Crimson Text', serif;
+}
+#consultant {
+align-items: center; 
+}
+
+.buy-btn{
+  padding: 20px 20px;
+  color: #ffffff;
+  background-color: #cf2e2e;
+  font-size: 25px;
+  font-family: 'Crimson Text', serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.buy-btn:hover {
+  background-color: #e36464;
+}
+
+.consultant-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query */
+
+@media screen and (max-width: 779px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+  .info-content {
+    border: 1px solid #cfcfcf;
+    text-align: left;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-top: 30px;
+    padding: 30px;
+}
+.img-single-post img {
+  width: 100%;
+}
+.product-content {
+  border: 1px solid #cfcfcf;
+  text-align: left;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 30px;
+  padding: 30px;
+}
+.service-content {
+  border: 1px solid #cfcfcf;
+  text-align: left;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 30px;
+  padding: 30px;
+}
+.training-content {
+  border: 1px solid #cfcfcf;
+  text-align: left;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 30px;
+  padding: 30px;
+}
+.discover-btn p {
+  font-size: 17px;
+  font-family: 'Crimson Text', serif;
+  color: #000000;
+  }
+}
+
+@media screen and (min-width: 780px) {
+
+  #topnav {
+    padding: 20px 50px; 
+  }
+
+  #topnav a {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 18px;
+  }
+
+  #menu {
+    display: block; 
+  }
+
+  #menu-button {
+    display: none; 
+  }
+/* footer */
+.footer {
+  padding: 20px;
+  font-size: 18px;
+}
+  #footer-menu li {
+    margin-top: 30px; 
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+  #menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  #menu li {
+    display: inline-block;
+    text-align: center;
+  }
+  #menu-container {
+    display: none;
+  }
+/* HOME */
+  /*  hero */
+  .hero-image {
+    width: 100%;
+  }
+
+  .slogan-container {
+    bottom: 40px;
+    right: 40px;
+    background-color: #2ea2cc;
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+
+  .slogan-container h3 {
+    font-size: 35px; 
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+  .get-colours {
+    padding: 20px 18px;
+    font-size: 25px; 
+    background-color:  #020381;
+    color:  white;
+    font-family: 'Crimson Text', serif;
+    display: block; 
+    margin: 0 auto; 
+  }
+
+  .home-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid  #cf2e2e;
+  }
+  img.home-section-image {
+    max-width: 100%;
+    max-height: auto;
+  }
+  .find-consultant{
+    padding: 20px 18px;
+    color: white;
+    background-color: #fcb900;
+    color: white;
+    font-size: 25px;
+    font-family: 'Crimson Text', serif;
+    margin-top: 30px;
+  }
+  
+  .home-sections h4 {
+    font-size:  25px;
+    font-family: 'Crimson Text', serif;
+    /*color: rgba(38, 106, 109, 1);*/
+    padding-bottom: 10px;
+  }
+  
+  .home-sections p {
+    font-size:  20px;
+    
+  }
+  .home-sections h5 {
+    font-size:  23px;
+    
+    margin-top: 20px;
+  }
+  
+  .home-sections .who-consultant {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .cardCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    gap: 20px;
+    padding-bottom: 20px;
+    }
+
+    .post-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    border: 1px solid #cfcfcf;
+    }
+
+    .post-card img {
+      width: 100%;
+      
+    }
+
+    .post-card a{
+      color: #ffffff;
+      background-color: #fcb900;
+      display: inline-block;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 25px;
+      font-family: 'Crimson Text', serif;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      
+    }
+
+    .home-sections h5 {
+      padding-top:  22px;
+      font-size: 20px;
+      }
+
+    .form-group {
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.form-group input {
+  width: 350px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.subscribe {
+  background-color: #fcb900;
+  color: #ffffff;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-family: 'Crimson Text', serif;
+}
+
+.message-cont {
+  width: 350px;
+  height: 200px;
+}
+/* Consult page */
+.post-shop-container a {
+  color: #cf2e2e;
+  display: inline-block;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 26px;
+  font-family: 'Crimson Text', serif;
+  list-style: none;
+}
+
+#homeCont {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+/*CONTACT PAGE*/
+.contactMessage h3,p {
+  font-size: 26px;
+}
+
+.postContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  margin-top: 40px;
+  /* margin-bottom: 40px; */
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.img-single-post img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.contact-btn{
+  padding: 20px 20px;
+  color: white;
+  background-color: #fcb900;
+  font-size: 25px;
+  font-family: 'Crimson Text', serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for tablet */
+  gap: 20px;
+}
+
+.single-container {
+  grid-template-columns: 1fr 1fr; 
+  display: grid;
+  column-gap: 20px;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.info-content {
+  border: 1px solid #cfcfcf;
+  text-align: left;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 30px;
+  padding: 30px;
+}
+.product-content {
+  text-align: left;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 30px;
+  padding: 30px;
+}
+.img-single-post img {
+  width: 100%;
+}
+.service-content {
+  text-align: left;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 30px;
+  padding: 30px;
+  }
+  .training-content {
+    text-align: left;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-top: 30px;
+    padding: 30px;
+  }
+  .discover-btn p {
+  font-size: 18px;
+  font-family: 'Crimson Text', serif;
+  color: #000000;
+}
+}
+
+@media screen and (min-width: 992px) {
+
+  .home-sections p {
+    font-size:  23px;
+    
+  }
+
+  .cardCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+  .discover-btn {
+    text-align: center;
+    padding-left: 20px;
+  }
+
+  .post-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border: 1px solid #cfcfcf;
+   }
+
+   h4.title {
+    font-size: 23px;
+    font-family: 'Crimson Text', serif;
+     /*color: rgba(38, 106, 109, 1);*/
+    padding-bottom: 10px;
+    padding-top: 20px;
+    /*color: #266a6d;*/
+  }
+  .buy-btn{
+    padding: 23px 23px;
+    color: #ffffff;
+    background-color: #cf2e2e;
+    font-size: 27px;
+    font-family: 'Crimson Text', serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+}
+
+/*  DESKTOP screens */
+@media (min-width: 1024px) {
+
+  /*  hero */
+  .slogan-container {
+    bottom: 70px;
+    right: 70px;
+    background-color: #2ea2cc;
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    text-align: center;
+    
+  }
+  .slogan-container h3 {
+    font-size: 50px; 
+    margin-bottom: 20px; 
+    color: #ffffff;
+    padding-left: 70px;
+    padding-right: 70px;
+    
+    padding-left: 40px;
+    padding-right: 40px;
+}
+  .get-colours {
+    padding: 25px 25px;
+    font-size: 50px; 
+    background-color:  #020381;
+    color:  #ffffff;
+    font-family: 'Crimson Text', serif;
+    display: block; /* Make the button a block element to center it */
+    margin: 0 auto; 
+  }
+/*  home-sections */
+.home-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px; 
+  padding-bottom: 40px;
+  border-bottom: 1px solid  #cf2e2e;
+}
+img.home-section-image {
+  max-width: 100%;
+  max-height: auto;
+}
+.find-consultant{
+  padding: 20px 18px;
+  background-color: #fcb900;
+  color: white;
+  font-size: 25px;
+  font-family: 'Crimson Text', serif;
+  margin-top: 30px;
+}
+
+.home-sections h4 {
+  font-size:  27px;
+  font-family: 'Crimson Text', serif;
+   /*color: rgba(38, 106, 109, 1);*/
+  padding-bottom: 10px;
+}
+
+.home-sections p {
+  font-size:  25px;
+}
+
+.home-sections h5 {
+  font-size:  25px;
+  
+}
+
+.home-sections .who-consultant {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally in each div */
+}
+/*  about us */
+.home-sections .about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally in each div */
+}
+.form-group input {
+  width: 550px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.form-group h3 {
+  font-size: 27px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  margin: 30px;
+  padding-top: 30px;
+}
+.message-cont {
+  width: 550px;
+  height: 300px;
+}
+h4.title {
+  font-size: 25px;
+  font-family: 'Crimson Text', serif;
+   /*color: rgba(38, 106, 109, 1);*/
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.post-shop-container a {
+  color: #cf2e2e;
+  display: inline-block;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 27px;
+  font-family: 'Crimson Text', serif;
+  list-style: none;
+}
+#homeCont {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+/*CONTACT PAGE*/
+.contactMessage h3,p {
+  font-size: 28px;
+}
+
+.contact-btn{
+  padding: 20px 20px;
+  color: #ffffff;
+  background-color: #fcb900;
+  font-size: 27px;
+  font-family: 'Crimson Text', serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
+  gap: 20px;
+}
+.discover-btn p {
+  font-size: 19px;
+  font-family: 'Crimson Text', serif;
+  color: #000000;
+  }
+}
+
+/*
+font-family: 'Nunito', sans-serif; 
+font-family: 'Crimson Text', serif;
+*/
