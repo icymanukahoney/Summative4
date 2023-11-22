@@ -80,7 +80,7 @@ const Consultants = () => {
 
   <div className="home-sections">
   <div className="who-consultant">
-    <img src="/src/assets/cons.jpg" className='home-section-image' alt="Colour Consultant Image" />
+    <img src="/assets/cons.jpg" className='home-section-image' alt="Colour Consultant Image" />
    </div>
    <div>
     <h4>OUR COLOUR ME BEAUTIFUL NZ CONSULTANTS </h4>

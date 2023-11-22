@@ -28,7 +28,7 @@ const Footer = () => {
       </ul>
       </div>
       <Link to="/">
-         <img src="/src/assets/Frame 6.png" alt="Colour Me Beautiful Logo" />
+         <img src="/assets/Frame 6.png" alt="Colour Me Beautiful Logo" />
     </Link>
       <div className='footer-bottom'>
         <p>&copy; 2023 Colour Me Beautiful New Zealand | All Rights Reserved | Design By Maria Stromova</p>

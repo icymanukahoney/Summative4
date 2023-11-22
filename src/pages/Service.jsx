@@ -94,7 +94,7 @@ const Service = () => {
       
    <div className="home-sections">
      <div className="who-consultant">
-     <img src="/src/assets/service.jpg" className='home-section-image' alt="Colour Consultant Image" />
+     <img src="/assets/service.jpg" className='home-section-image' alt="Colour Consultant Image" />
      </div>
 
      <div>

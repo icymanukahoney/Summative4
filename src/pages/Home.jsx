@@ -113,7 +113,7 @@ const Home = () => {
 <div className='container'>
    
     <div className="hero-section">
-        <img src="/src/assets/hero.jpg" className='hero-image' alt="Hero Image" />
+        <img src="/assets/hero.jpg" className='hero-image' alt="Hero Image" />
         <div className="slogan-container">
         <div className="small-slogan-container">
         <h3>Dress Your Life in 
@@ -128,7 +128,7 @@ const Home = () => {
   <div className="home-sections">
 
   <div className="who-consultant">
-    <img src="/src/assets/home-consult-image.jpg" className='home-section-image' alt="Colour Consultant Image" />
+    <img src="/assets/home-consult-image.jpg" className='home-section-image' alt="Colour Consultant Image" />
     <button className='find-consultant' onClick={handleFindConsultantClick}>FIND A CONSULTANT 
     </button>
   </div>
@@ -156,7 +156,7 @@ const Home = () => {
 <  div className="home-sections">
 
   <div className="about-us">
-    <img src="/src/assets/about.jpg" className='home-section-image' 
+    <img src="/assets/about.jpg" className='home-section-image' 
     alt="About Us Image" />
   </div>
 
@@ -207,7 +207,7 @@ const Home = () => {
 
 <div className="home-sections">
 <div>
-    <img src="/src/assets/owner.jpg" className='home-section-image' alt="Owner Image" />
+    <img src="/assets/owner.jpg" className='home-section-image' alt="Owner Image" />
 </div>
 <div>
     <h4>WELCOME TO COLOUR ME BEAUTIFUL NEW ZEALAND</h4>

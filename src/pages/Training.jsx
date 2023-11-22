@@ -95,7 +95,7 @@ const Training = () => {
 
 <div className="home-sections">
     <div className="who-consultant">
-    <img src="/src/assets/training.jpg" className='home-section-image' alt="Colour Consultant Image" />
+    <img src="/assets/training.jpg" className='home-section-image' alt="Colour Consultant Image" />
     </div>
     <div>
     <h4>TRAINING</h4>

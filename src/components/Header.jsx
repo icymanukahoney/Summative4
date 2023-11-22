@@ -21,7 +21,7 @@ return (
    <div id='topnav'>
     <div id='logo'>
     <Link to="/">
-         <img src="/src/assets/Frame 4.png" alt="Colour Me Beautiful Logo" />
+         <img src="/assets/Frame 4.png" alt="Colour Me Beautiful Logo" />
     </Link>
     </div>
 
