@@ -129,6 +129,7 @@ const Contact = () => {
   <meta name="description" content="Helping individuals enhance their appearance through personalized colour analysis, makeup masterclasses, styling expertise, and consultations across New Zealand." />
   <meta name="keywords" content="send message, contact Colour Me Beautiful, colour analysis, colour consultant, stylist, style consultation, style, colour, makeup consultant" />
  </Helmet>
+ 
     <div id='contact-container' className='container'>
     <button className='back-button' onClick={() => navigate(-1)}><ArrowLeft/>Go Back</button>
         <div>

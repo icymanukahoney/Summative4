@@ -13,33 +13,30 @@ font-family: 'Nunito', sans-serif;
 font-family: 'Crimson Text', serif;
 */
 
+
 * {
   margin: 0;
   padding: 0;
-
 }
-
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  /*font-family: 'Crimson Text', serif, 'Nunito', sans-serif;*/
-}
-
 
 .mb-2 {
   margin-bottom: 20px;
 }
 
-body {
+
+html, body  {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 body.no-scroll {
   overflow-y: hidden;
+}
+
+.container {
+  padding: 50px;
 }
 
 label {
@@ -54,8 +51,7 @@ h1 {
   font-size: 40px;
 }
 
-h2 {
-  color: #000000;
+ h2 {
   margin-bottom: 40px;
   font-weight: 100;
   text-align: center;
@@ -63,13 +59,34 @@ h2 {
   font-size: 25px;
   font-family: 'Crimson Text', serif;
 }
-h4 {
+
+.post-shop-container h2 {
+  color: black;
   margin-bottom: 40px;
   font-weight: 100;
   text-align: center;
   margin-top: 20px;
   font-size: 25px;
   font-family: 'Crimson Text', serif;
+}
+
+h4 {
+  /*margin-bottom: 20px;*/
+  text-align: center;
+  /*margin-top: 20px;*/
+  font-family: 'Crimson Text', serif;
+}
+h3 {
+ /*margin-bottom: 20px;*/
+  /*text-align: center;*/
+/*margin-top: 20px;*/
+  font-family: 'Crimson Text', serif;
+}
+#contact-container h4 {
+margin-bottom: 20px;
+text-align: center;
+margin-top: 20px;
+font-family: 'Crimson Text', serif;
 }
 
 .back-button {
@@ -91,7 +108,7 @@ h4 {
   text-align: center;
 }
 #topnav a {
-  color: #000000;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   margin-left: 20px;
   font-size: 18px;
@@ -101,7 +118,6 @@ h4 {
 }
 
 #topnav #logo {
-  
     font-weight: 600;
     font-size: 28px;
     margin-right: 30px;
@@ -142,7 +158,7 @@ button:hover {
   font-size: 33px;
   position: relative;
   top: 2px;
-  padding-right: 40px;
+  padding-right: 50px;
 }
 
 #mobile-menu {
@@ -164,7 +180,6 @@ button:hover {
   margin-top: 20px;
   font-weight: 700;
   font-family: 'Crimson Text', serif;
-
 }
 
 #close-nav-menu {
@@ -207,13 +222,21 @@ button:hover {
   padding-bottom: 10px;
   }
 /* footer */
+
+
 .footer {
+  padding-top: 20px;
   background-color: #020381;
   color: #ffffff;
   text-align: center;
+ 
+}
+.footer img{
+  width: 30%;
 }
 
 .footer-container {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,27 +245,25 @@ button:hover {
 #footer-menu {
   list-style: none;
   display: flex;
-  gap: 20px; 
+  gap: 10px; 
   flex-wrap: wrap; 
   justify-content: center;
 }
 
 #footer-menu li {
-  padding: 10px; 
-  margin-top: 10px
+  margin-top: 5px
 }
 
 #footer-menu a {
   text-decoration: none;
   color: #ffffff; 
-  font-family: 'Crimson Text', serif;
 }
 
 .footer-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #ffffff;
 }
 
@@ -254,16 +275,21 @@ button:hover {
   margin-top: auto;
 }
 
+.footer {
+  font-size: 10px;
+  font-family: 'Crimson Text', serif;
+}
 .footer-bottom p {
-  font-size: 14px;
-  padding-bottom: 30px;
+  font-size: 10px;
+    padding: 20px;
 }
 
 /* --------- HOME ----------- */
 
+/*
 .container {
   padding: 60px;
-}
+} */
 
 /*  hero */
 .hero-section {
@@ -281,35 +307,28 @@ button:hover {
 }
 
 .slogan-container {
-  position: static; 
   text-align: center;
   background-color: rgba(46, 162, 204, 1);
-  width: 100%;
-  height: 350px;
-  padding-top: 40px;
 }
 
 .slogan-container h3 {
-  font-size: 40px;
+  font-size: 23px;
   color: #ffffff;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 30px;
-  font-family: 'Crimson Text', serif;
 }
 
 .get-colours {
-  padding: 20px 20px;
-  font-size: 30px;
+  padding: 15px 15px;
+  font-size: 20px;
   background-color: #020381;
   color: white;
   display: block;
   margin: 0px auto;
   display: inline-block;
-  margin-left:  20px;
-  margin-right:  20px;
-  margin-bottom:  20px;
+  margin-bottom:  30px;
+  font-family: 'Crimson Text', serif;
 }
 
 .get-colours:hover {
@@ -319,27 +338,25 @@ button:hover {
 .home-sections {
   display: grid;
   grid-template-columns: 1fr ;
-  column-gap: 40px;
   margin-top: 40px;
   /* margin-bottom: 40px; */
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .home-sections img {
   width: 100%;
 }
 
 .home-sections h4 {
-  font-size: 23px;
+  font-size: 20px;
   font-family: 'Crimson Text', serif;
   /*color: rgba(38, 106, 109, 1);*/
   padding-bottom: 10px;
   padding-top: 20px;
   text-align: center;
-  /*color: #266a6d;*/
 } 
 
 .home-sections p {
-  font-size:  20px;
+  font-size:  18px;
   /*font-family: 'Nunito', sans-serif; */
   color: #000000; 
 }
@@ -436,16 +453,16 @@ padding-bottom: 30px;
   .discover-service {
   color: #cf2e2e;
   display: inline-block;
-  padding: 20px 18px;
+  padding: 10px 10px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Crimson Text', serif;
   }
 
   .home-sections h5 {
   padding-top:  20px;
    /*font-family: 'Nunito', sans-serif; */
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
   }
 
@@ -459,37 +476,37 @@ padding-bottom: 30px;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+    padding-top: 20px;
   }
   
   .form-group {
+    
     text-align: center;
     align-items: center;
   }
   
   .form-group h3 {
-    font-size: 23px;
-    color: #ffffff;
+    font-size: 20px;
+    color: #fff;
     margin-bottom: 15px;
     margin: 30px;
     padding-top: 30px;
-    font-family: 'Crimson Text', serif;
 
   }
-  
   .form-group label {
     display: block;
-    font-size: 22px;
+    font-size: 18px;
     color: #ffffff;
     margin-bottom: 5px;
-    margin-top: 20px;
+    margin-top: 5px;
   }
   
   .form-group input {
-    width: 250px;
+    width: 200px;
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 18px;
   }
   
   .subscribe {
@@ -515,7 +532,7 @@ padding-bottom: 30px;
     margin-bottom: 20px;
   }
   .message-cont {
-    width: 250px;
+    width: 200px;
     height: 150px;
   }
   /*CONTACT PAGE*/
@@ -527,7 +544,7 @@ padding-bottom: 30px;
   }
 
   .contactMessage h3,p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   /* cons page */
@@ -562,7 +579,7 @@ padding-bottom: 30px;
     display: inline-block;
     padding: 10px 10px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Crimson Text', serif;
     list-style: none;
 }
@@ -586,9 +603,9 @@ padding-bottom: 30px;
 }
 
 .single-container h4 {
-  font-size: 23px;
+  font-size: 20px;
   font-family: 'Crimson Text', serif;
-   /*color: rgba(38, 106, 109, 1);*/
+  /*color: #266a6d;*/
   padding-bottom: 10px;
   padding-top: 20px;
   text-align: center;
@@ -596,9 +613,10 @@ padding-bottom: 30px;
 } 
 
 .single-container p {
-  font-size:  20px;
+  font-size:  18px;
+  color: #000000;
    /*font-family: 'Nunito', sans-serif; */
-   color: #000000;
+  
 }
 
 .single-container .single-post {
@@ -615,7 +633,7 @@ margin-top: 30px;
 padding: 30px;
 }
 .taxonomy-term-pill {
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Crimson Text', serif;
 }
 #consultant {
@@ -623,10 +641,10 @@ align-items: center;
 }
 
 .buy-btn{
-  padding: 20px 20px;
+  padding: 10px 10px;
   color: #ffffff;
   background-color: #cf2e2e;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Crimson Text', serif;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -643,6 +661,37 @@ align-items: center;
 /* Media query */
 
 @media screen and (max-width: 779px) {
+
+  
+
+  .slogan-container {
+    position: static; 
+    text-align: center;
+    background-color: rgba(46, 162, 204, 1);
+    width: 100%;
+    height: 200px;
+    padding-top: 40px;
+  } 
+
+  .slogan-container h3 {
+    font-size: 23px;
+    color: #ffffff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .get-colours {
+    padding: 15px 15px;
+    font-size: 20px;
+    background-color: #020381;
+    color: white;
+    display: block;
+    margin: 0px auto;
+    display: inline-block;
+    margin-bottom:  30px;
+    font-family: 'Crimson Text', serif;
+  }
   .grid-container {
     display: grid;
     grid-template-columns: 1fr; 
@@ -686,11 +735,12 @@ align-items: center;
 .discover-btn p {
   font-size: 17px;
   font-family: 'Crimson Text', serif;
-  color: #000000;
   }
 }
 
 @media screen and (min-width: 780px) {
+
+  
 
   #topnav {
     padding: 20px 50px; 
@@ -744,14 +794,14 @@ align-items: center;
     right: 40px;
     background-color: #2ea2cc;
     width: 350px;
-    height: 200px;
+    height: auto;
     position: absolute;
     text-align: center;
     padding-bottom: 70px;
   }
 
   .slogan-container h3 {
-    font-size: 35px; 
+    font-size: 30px; 
     color: white;
     padding-left: 30px;
     padding-right: 30px;
@@ -981,15 +1031,30 @@ align-items: center;
   .discover-btn p {
   font-size: 18px;
   font-family: 'Crimson Text', serif;
-  color: #000000;
+  }
+
+  #contact-container h4 {
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Crimson Text', serif;
+}
+h4 {
+  /*margin-bottom: 20px;*/
+  text-align: center;
+  /*margin-top: 20px;*/
+  font-family: 'Crimson Text', serif;
+  font-size: 25px;
 }
 }
 
 @media screen and (min-width: 992px) {
 
+  .container {
+    padding: 60px;
+  }
   .home-sections p {
-    font-size:  23px;
-    
+    font-size:  20px;
   }
 
   .cardCont {
@@ -1017,12 +1082,11 @@ align-items: center;
    }
 
    h4.title {
-    font-size: 23px;
+    font-size: 25px;
     font-family: 'Crimson Text', serif;
-     /*color: rgba(38, 106, 109, 1);*/
+    /*color: #266a6d;*/
     padding-bottom: 10px;
     padding-top: 20px;
-    /*color: #266a6d;*/
   }
   .buy-btn{
     padding: 23px 23px;
@@ -1033,11 +1097,13 @@ align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
   
 }
 
 /*  DESKTOP screens */
 @media (min-width: 1024px) {
+
 
   /*  hero */
   .slogan-container {
@@ -1056,13 +1122,12 @@ align-items: center;
     color: #ffffff;
     padding-left: 70px;
     padding-right: 70px;
-    
     padding-left: 40px;
     padding-right: 40px;
 }
   .get-colours {
     padding: 25px 25px;
-    font-size: 50px; 
+    font-size: 40px; 
     background-color:  #020381;
     color:  #ffffff;
     font-family: 'Crimson Text', serif;
@@ -1084,7 +1149,7 @@ img.home-section-image {
   max-height: auto;
 }
 .find-consultant{
-  padding: 20px 18px;
+  padding: 20px 20px;
   background-color: #fcb900;
   color: white;
   font-size: 25px;
@@ -1093,9 +1158,9 @@ img.home-section-image {
 }
 
 .home-sections h4 {
-  font-size:  27px;
+  font-size:  28px;
   font-family: 'Crimson Text', serif;
-   /*color: rgba(38, 106, 109, 1);*/
+  /*color: #266a6d;*/
   padding-bottom: 10px;
 }
 
@@ -1105,7 +1170,6 @@ img.home-section-image {
 
 .home-sections h5 {
   font-size:  25px;
-  
 }
 
 .home-sections .who-consultant {
@@ -1140,7 +1204,7 @@ img.home-section-image {
 h4.title {
   font-size: 25px;
   font-family: 'Crimson Text', serif;
-   /*color: rgba(38, 106, 109, 1);*/
+  /*color: #266a6d;*/
   padding-bottom: 10px;
   padding-top: 20px;
 }
@@ -1162,7 +1226,7 @@ h4.title {
 }
 /*CONTACT PAGE*/
 .contactMessage h3,p {
-  font-size: 28px;
+  font-size: 27px;
 }
 
 .contact-btn{
@@ -1182,8 +1246,14 @@ h4.title {
 .discover-btn p {
   font-size: 19px;
   font-family: 'Crimson Text', serif;
-  color: #000000;
   }
+  #contact-container h4 {
+    margin-bottom: 27px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Crimson Text', serif;
+}
+ 
 }
 
 /*

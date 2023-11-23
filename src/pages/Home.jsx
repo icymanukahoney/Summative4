@@ -223,10 +223,11 @@ const Home = () => {
     <h5>Trudy Van Zyl</h5>
 </div>
 </div>
+</div>
 
 <SubscriptionForm />
 
-</div>
+
 </>
  )
 }
