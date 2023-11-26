@@ -276,7 +276,7 @@ button:hover {
 }
 
 .footer {
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Crimson Text', serif;
 }
 .footer-bottom p {
@@ -455,7 +455,6 @@ padding-bottom: 30px;
   display: inline-block;
   padding: 10px 10px;
   text-decoration: none;
-  font-size: 20px;
   font-family: 'Crimson Text', serif;
   }
 
@@ -480,7 +479,7 @@ padding-bottom: 30px;
   }
   
   .form-group {
-    
+    margin-bottom: 50px;
     text-align: center;
     align-items: center;
   }
@@ -502,7 +501,7 @@ padding-bottom: 30px;
   }
   
   .form-group input {
-    width: 200px;
+    
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
@@ -531,10 +530,7 @@ padding-bottom: 30px;
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
-  .message-cont {
-    width: 200px;
-    height: 150px;
-  }
+  
   /*CONTACT PAGE*/
 
   .contactMessage{
@@ -543,8 +539,9 @@ padding-bottom: 30px;
     padding-bottom: 50px;
   }
 
-  .contactMessage h3,p {
+  .contactMessage h3 {
     font-size: 20px;
+    font-family: 'Crimson Text', serif;
   }
 
   /* cons page */
@@ -560,12 +557,13 @@ padding-bottom: 30px;
     }
     .post-shop-container img {
       width: 100%;
-      border: 1px solid #cfcfcf;
+      
     }
 
     .post-shop-container  {
       padding-bottom: 50px;
-      padding-top: 20px
+      padding-top: 20px;
+      border: 1px solid #cfcfcf;
     }
   
     .cons-shop-container {
@@ -616,7 +614,7 @@ padding-bottom: 30px;
   font-size:  18px;
   color: #000000;
    /*font-family: 'Nunito', sans-serif; */
-  
+   padding-bottom: 20px;
 }
 
 .single-container .single-post {
@@ -656,13 +654,68 @@ align-items: center;
 .consultant-container img {
   max-width: 100%;
   height: auto;
+  padding-top: 20px;
+}
+
+h4#component {
+  border-bottom:#cf2e2e 1px solid;
+  padding-bottom: 20px;
+}
+#contact-container {
+  padding-bottom: 0px;
+}
+
+@media screen and (max-width: 480px) {
+
+  .slogan-container h3 {
+    font-size: 23px;
+    color: #ffffff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+
+.get-colours {
+  padding: 15px 15px;
+  font-size: 20px;
+  background-color: #020381;
+  color: white;
+  display: block;
+  margin: 0px auto;
+  display: inline-block;
+  margin-bottom:  30px;
+  font-family: 'Crimson Text', serif;
+}
+.form-group input {
+  width: 220px;
+}
+.message-cont {
+  width: 220px;
+  height: 150px;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 779px) {
+  .slogan-container h3 {
+    font-size: 33px;
+    padding-bottom: 10px;
+  }
+
+  .get-colours {
+    font-size: 30px;
+  }
+  .form-group input {
+    width: 320px;
+}
+.message-cont {
+  width: 320px;
+  height: 150px;
+}
 }
 
 /* Media query */
 
 @media screen and (max-width: 779px) {
-
-  
 
   .slogan-container {
     position: static; 
@@ -673,32 +726,14 @@ align-items: center;
     padding-top: 40px;
   } 
 
-  .slogan-container h3 {
-    font-size: 23px;
-    color: #ffffff;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-  }
   
-  .get-colours {
-    padding: 15px 15px;
-    font-size: 20px;
-    background-color: #020381;
-    color: white;
-    display: block;
-    margin: 0px auto;
-    display: inline-block;
-    margin-bottom:  30px;
-    font-family: 'Crimson Text', serif;
-  }
   .grid-container {
     display: grid;
     grid-template-columns: 1fr; 
     gap: 20px;
   }
   .info-content {
-    border: 1px solid #cfcfcf;
+    
     text-align: left;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -709,7 +744,7 @@ align-items: center;
   width: 100%;
 }
 .product-content {
-  border: 1px solid #cfcfcf;
+  
   text-align: left;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -717,7 +752,7 @@ align-items: center;
   padding: 30px;
 }
 .service-content {
-  border: 1px solid #cfcfcf;
+  
   text-align: left;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -725,7 +760,7 @@ align-items: center;
   padding: 30px;
 }
 .training-content {
-  border: 1px solid #cfcfcf;
+ 
   text-align: left;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -736,10 +771,19 @@ align-items: center;
   font-size: 17px;
   font-family: 'Crimson Text', serif;
   }
+  .discover-service {
+    font-size: 20px;
+    }
+  h4#component {
+    font-size: 20px;
+  }
+  #contact-container h4 {
+    font-size: 20px;
+    }
+ 
 }
 
 @media screen and (min-width: 780px) {
-
   
 
   #topnav {
@@ -762,7 +806,7 @@ align-items: center;
 /* footer */
 .footer {
   padding: 20px;
-  font-size: 18px;
+  font-size: 16px;
 }
   #footer-menu li {
     margin-top: 30px; 
@@ -896,22 +940,27 @@ align-items: center;
       font-family: 'Crimson Text', serif;
       margin-top: 20px;
       margin-bottom: 50px;
-      
+    }
+    h4#homePostCont {
+      padding-left: 20px;
     }
 
     .home-sections h5 {
       padding-top:  22px;
       font-size: 20px;
       }
+      .discover-service {
+        font-size: 25px;
+        }
 
     .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: center;
     align-items: center;
 }
 
 .form-group input {
-  width: 350px;
+  width: 500px;
   padding: 10px;
   box-sizing: border-box;
   margin-bottom: 10px;
@@ -931,9 +980,10 @@ align-items: center;
 }
 
 .message-cont {
-  width: 350px;
+  width: 500px;
   height: 200px;
 }
+
 /* Consult page */
 .post-shop-container a {
   color: #cf2e2e;
@@ -997,7 +1047,7 @@ align-items: center;
   text-align: center;
 }
 .info-content {
-  border: 1px solid #cfcfcf;
+  
   text-align: left;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -1045,6 +1095,15 @@ h4 {
   /*margin-top: 20px;*/
   font-family: 'Crimson Text', serif;
   font-size: 25px;
+}
+h4#homeCards {
+  padding-right: 20px;
+}
+.single-container h4 {
+  text-align: left;
+} 
+h4#service, h4#training, h4#product {
+  text-align: center;
 }
 }
 
@@ -1097,7 +1156,9 @@ h4 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-
+  h4#homeCards {
+    padding-right: 20px;
+  }
   
 }
 
@@ -1183,8 +1244,11 @@ img.home-section-image {
   flex-direction: column;
   align-items: center; /* Center items horizontally in each div */
 }
+.discover-service {
+  font-size: 28px;
+  }
 .form-group input {
-  width: 550px;
+  width: 600px;
   padding: 10px;
   box-sizing: border-box;
   margin-bottom: 10px;
@@ -1198,7 +1262,7 @@ img.home-section-image {
   padding-top: 30px;
 }
 .message-cont {
-  width: 550px;
+  width: 600px;
   height: 300px;
 }
 h4.title {
@@ -1207,6 +1271,7 @@ h4.title {
   /*color: #266a6d;*/
   padding-bottom: 10px;
   padding-top: 20px;
+  
 }
 .post-shop-container a {
   color: #cf2e2e;
@@ -1253,7 +1318,13 @@ h4.title {
     margin-top: 20px;
     font-family: 'Crimson Text', serif;
 }
+h4#name-title {
+  text-align: left;
+}
  
+h4#homeCards {
+  padding-right: 20px;
+}
 }
 
 /*

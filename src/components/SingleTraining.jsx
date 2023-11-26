@@ -70,7 +70,7 @@ const SingleTraining = () => {
 
     <button className='back-button' onClick={() => navigate(-1)}><ArrowLeft/>Go Back</button>
         
-    <h4>TRAININGS</h4>
+    <h4 id='component'>TRAININGS</h4>
 
         <div key={training.slug} className='single-container'>
             
@@ -79,7 +79,7 @@ const SingleTraining = () => {
             </div>
 
             <div>
-            <h4 className='title'>{training.title.rendered}</h4>
+            <h4 id='training' className='title'>{training.title.rendered}</h4>
             <div className='training-content' dangerouslySetInnerHTML={{__html: training.content.rendered}}/>
             </div>
 

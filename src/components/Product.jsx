@@ -73,7 +73,7 @@ const Product = () => {
              <img className='product-image' src={getFeaturedImage(product)} alt="Product Image"/>
              </div>
             
-             <h4 className='name'>{product.name}</h4>
+             <h4 id='product' className='name'>{product.name}</h4>
              <h3>${((parseFloat(product.prices.price)) / 100).toFixed(2)}</h3>
            </div>
        

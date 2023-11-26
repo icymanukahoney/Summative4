@@ -54,9 +54,9 @@ const Shopfront = () => {
                     <Link className='product-link' to={`/product/${product.id}`}>
                     <h2 className='name'>{product.name}</h2>
                     </Link>
-                    <h3 className='name'>
+                    <h3 className='name'> was: 
                         ${((parseFloat(product.prices.regular_price)) / 100).toFixed(2)} {product.prices.currency_code}</h3>
-                    <h4 className='name'>
+                    <h4 className='name'> now:
                         ${((parseFloat(product.prices.sale_price)) / 100).toFixed(2)} {product.prices.currency_code}</h4>
                 </div>
            ) // end of map return
@@ -85,8 +85,8 @@ const Shopfront = () => {
           </div>
         )}
       </div>
-<div className='container'>
-    <h4>SHOP</h4> 
+<div id='shopfront' className='container'>
+    <h4 id='component'>SHOP</h4> 
     <div id='shop-page' className='cons-shop-container'>
     
        <div id='homeCont' className='grid-container'>

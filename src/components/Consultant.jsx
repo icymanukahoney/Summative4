@@ -99,11 +99,11 @@ const Consultant = () => {
   <meta name="keywords" content="colour analysis, colour consultant, stylist, style consultation, style, colour, makeup consultant" />
  </Helmet>
    
-<div className='container'>
+<div id='consultants' className='container'>
         <button className='back-button' onClick={() => navigate(-1)}><ArrowLeft/>Go Back</button>
         
         
-    <h4>CONSULTANT</h4>
+    <h4 id='component'>CONSULTANT</h4>
 
         <div key={consultant.slug} id='consultant' className='single-container'>
 
@@ -112,10 +112,12 @@ const Consultant = () => {
             </div>
 
              <div>
-             <Areas consultant={consultant}/>
+             
                 <div className='info-content'>
-                 <h4 className='title'>{consultant.title.rendered}</h4>
+                 <h4 id='name-title' className='title'>{consultant.title.rendered}</h4>
                  <div className='info' dangerouslySetInnerHTML={{__html: consultant.content.rendered}}/>
+                 <p>See all consultants in:</p>
+                 <Areas consultant={consultant}/>
                 </div>
              </div>
 

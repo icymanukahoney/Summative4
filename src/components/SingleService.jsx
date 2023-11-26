@@ -58,7 +58,7 @@ const SingleService= () => {
 
         <button className='back-button' onClick={() => navigate(-1)}><ArrowLeft/>Go Back</button>
          
-         <h4>SERVICE</h4>
+         <h4 id='component'>SERVICE</h4>
 
            <div key={service.slug} className='single-container'>
 
@@ -67,7 +67,7 @@ const SingleService= () => {
            </div>
 
            <div>
-            <h4 className='title'>{service.title.rendered}</h4>
+            <h4 id='service' className='title'>{service.title.rendered}</h4>
             <div className='service-content' dangerouslySetInnerHTML={{__html: service.content.rendered}}/>
             </div>
         

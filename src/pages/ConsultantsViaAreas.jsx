@@ -10,7 +10,7 @@ const AreaName = ({area}) => {
     return (
         <>
         <div>
-            <h4>All Consultants in {area.name}: </h4>
+            <h4 id='component'>All Consultants in {area.name}: </h4>
         </div>
         </>
     )

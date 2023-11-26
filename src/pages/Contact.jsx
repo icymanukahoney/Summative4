@@ -50,7 +50,7 @@ const ContactForm = () => {
             <>
             <div className='contactMessage'>
                 <h3>Thank you for your message!</h3>
-                <p>It has been sent.</p>
+                <h3>It has been sent.</h3>
             </div>
             </>
         )
@@ -61,7 +61,7 @@ const ContactForm = () => {
             <>
             <div className='contactMessage'>
                 <h3>Thank you for your message!</h3>
-                <p>It has been sent.</p>
+                <h3>It has been sent.</h3>
             </div>
             </>
         )
@@ -133,8 +133,9 @@ const Contact = () => {
     <div id='contact-container' className='container'>
     <button className='back-button' onClick={() => navigate(-1)}><ArrowLeft/>Go Back</button>
         <div>
+        <h4>CONTACT US</h4>
         <img src="/assets/contact.jpg" className='hero-image' alt="Sky Image" />
-            <h4>CONTACT US</h4>
+            
             <ContactForm/>
         </div>
     </div>

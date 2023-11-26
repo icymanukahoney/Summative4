@@ -84,7 +84,7 @@ const Home = () => {
          </div>
 
          <div className='discover-btn'>
-         <h4 className='title'>{post.title.rendered}</h4>
+         <h4 id='homeCards' className='title'>{post.title.rendered}</h4>
          <li key={post.slug + "-" + index}>
             <a href={`#/post/${post.id}`}>DISCOVER</a>
           </li>

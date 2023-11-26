@@ -12,14 +12,6 @@ function App() {
 
   useEffect(() => {
 
-    console.log("bgColor:", bgColor);
-  console.log("fontFamily:", fontFamily);
-  console.log("footColor:", footColor);
-  console.log("fontColor:", fontColor);
-  console.log("navColor:", navColor);
-
-
-
 
 // apply the bg color
 document.body.style.backgroundColor = `#${bgColor}`
