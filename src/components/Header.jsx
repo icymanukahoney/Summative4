@@ -1,16 +1,37 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 // import mobile menu
 import MobileMenu from './MobileMenu'
 import {Link} from "react-router-dom"
 // import List for bootstrap icons
 import { List } from 'react-bootstrap-icons'
-//import axios from 'axios'
+import axios from 'axios'
 
 const baseUrl = import.meta.env.VITE_WP_BASEURL
 
 const Header = () => {
   //set a state to check if the mobile menu is open or not
   const [menuIsOpen, openMenu] = useState(false);
+  const [logoUrl, setLogoUrl] = useState('')
+
+  //fetch the logo with useEffect:
+  useEffect(() => {
+    const fetchNavLogo = async () => {
+        try {
+            const response = await axios.get(`${baseUrl}wp-json/custom/v1/nav-logo`)
+            if (response.status === 200) {
+                const data = response.data
+                console.log(response.data);
+                setLogoUrl(data[0])
+            } else {
+                console.error("Failed to fetch logo URL")
+            }
+        } catch (error) {
+            console.error("Error fetching lol URL" , error)
+        }
+    }
+
+    fetchNavLogo();
+}, [])
 
   const toggleMobileMenu = () => {
       openMenu(!menuIsOpen);
@@ -21,7 +42,7 @@ return (
    <div id='topnav'>
     <div id='logo'>
     <Link to="/">
-         <img src="/assets/Frame 4.png" alt="Colour Me Beautiful Logo" />
+    <img src={logoUrl} alt="colour me beutiful Logo"/>
     </Link>
     </div>
 
